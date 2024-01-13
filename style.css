@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+:root {
+  --clr-100: rgb(161, 45, 177);
+}
+span {
+  color: var(--clr-100);
+}
+.section-one {
+  display: flex;
+  justify-content: center;
+  gap: 35%;
+  font-family: "Lora", serif;
+}
+.section-two {
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Lora", serif;
+}
+.section-two input {
+  padding: 20px 350px 15px 20px;
+
+  background-color: lightgray;
+  border: none;
+  border-radius: 10px;
+  font-family: "Lora", serif;
+}
+.search-icon {
+  position: absolute;
+  top: 94px;
+  left: 890px;
+}
+.section-three {
+  display: flex;
+  justify-content: center;
+  gap: 30%;
+  padding-top: 20px;
+}
+.section-three img {
+  width: 60%;
+  padding-top: 35px;
+}
+.section-three {
+  font-family: "Lora", serif;
+}
+.section-three span {
+  font-family: "Inter", sans-serif;
+}
+
+.section-four {
+  display: flex;
+  justify-content: center;
+  gap: 43%;
+  font-family: "Playfair Display", serif;
+}
+.section-five .meaning {
+  color: lightgray;
+}
+.section-five {
+  margin-left: 26%;
+
+  width: 70%;
+}
+.section-five ul {
+  color: var(--clr-100);
+
+}
+.section-five p {
+  color: black;
+  font-size: 20px;
+  padding-right:30%;
+}
+.section-six {
+  display: flex;
+  margin-left: 30%;
+  gap: 3%;
+}
+.section-six-one {
+  margin: 0;
+  color: lightgray;
+}
+.section-six-two {
+  color: var(--clr-100);
+  margin: 0;
+}
+
+
+.section-seven {
+  width: 30%;
+  margin-left: 27%;
+}
+.section-seven ul li {
+  color: var(--clr-100);
+}
+.section-seven p {
+  color: black;
+
+}
+.section-seven .meaning{
+color: lightgray;
+}
+.section-seven h5 {
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+
+  transition: background 0.2s linear;
+}
+
+body.dark {
+  background-color: #292c35;
+}
+
+body.dark h1 body.dark .support a {
+  color: #fff;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: gray;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+.brightness {
+  display: flex;
+  gap: 10px;
+}
